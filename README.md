@@ -1,3 +1,26 @@
+# Learn ReactDND with NextJS, Typescript and ChakraUI
+
+## Installations Packages
+ChakraUI
+```
+yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^5
+```
+
+Typescript
+```
+yard add --dev typescript @types/react
+```
+
+ChakraUI Icons
+```
+yarn add @chakra-ui/icons
+```
+
+ReactDND with touch support
+```
+yarn add react-dnd react-dnd-html5-backend
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
