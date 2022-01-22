@@ -1,15 +1,20 @@
 import { ChakraProvider, Flex } from '@chakra-ui/react'
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
+
 import Navbar from '../components/navbar'
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <Flex direction="column" align="center">
-        <Navbar />
-        <Flex justify="center" align="center">
-          <Component {...pageProps} />
+      <DndProvider backend={HTML5Backend}>
+        <Flex direction="column" align="center">
+          <Navbar />
+          <Flex justify="center" align="center">
+            <Component {...pageProps} />
+          </Flex>
         </Flex>
-      </Flex>
+      </DndProvider>
     </ChakraProvider>
   )
 }
